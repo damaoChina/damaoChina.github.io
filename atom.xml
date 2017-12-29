@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zxfei.cn/"/>
-  <updated>2017-12-29T10:43:06.000Z</updated>
+  <updated>2017-12-29T11:16:44.000Z</updated>
   <id>http://zxfei.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何优雅（无限）的使用（试用） versions</title>
+    <link href="http://zxfei.cn/2017/12/29/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%EF%BC%88%E6%97%A0%E9%99%90%EF%BC%89%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E8%AF%95%E7%94%A8%EF%BC%89-versions/"/>
+    <id>http://zxfei.cn/2017/12/29/如何优雅（无限）的使用（试用）-versions/</id>
+    <published>2017-12-29T10:43:06.000Z</published>
+    <updated>2017-12-29T11:16:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>其实是一篇如何无限试用的教程，仅仅是为了测试和交流，如果有能力的同学请移步<a href="https://www.versionsapp.com" target="_blank" rel="noopener">官网</a>购买正版</p><p> 本猫的mac升级到了 macos 10.12.6 之后，网上流传的所谓的versions破解版本就不可用了，总会出现闪崩退出的情况。经历了command line + bbeidt 的黑暗时代和 cornerstone 的混乱时代，本猫决定自己尝试破解 versions ， 来一解相思之苦。。。  </p><p> 第一次胡乱尝试的结果就是我的小mac成功的重装了系统，真心想念我们亲爱的水果出的时间胶囊。。。</p><p> 废话少说，放出教程。 接招吧，versions君：   </p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">* 运行chean app软件，清楚残留的versions文件。如果以前的. versions文件已经通过常规方式删除，需去官网下载安装versions，然后利用cleanapp清除；</span><br><span class="line">* 修改系统时间为versions未过期的时间. </span><br><span class="line">* 终端cd到user目录下，依次运行如下命令：</span><br><span class="line">ps：如需要输入密码为开机密码</span><br><span class="line">sudo rm ~/.CF89AA64</span><br><span class="line">sudo rm ~/Library/.FB64CF89</span><br><span class="line">sudo rm ~/Library/Preferences/com.blackpixel.versions.plist</span><br><span class="line">sudo open ~/Library/Preferences/.GlobalPreferences.plist        默认为xcode打开</span><br><span class="line">Delete the key: com.blackpixel.versions.ezsRequiredToken and save it.  </span><br><span class="line">* 重启机器，然后修改系统时间为自动，即正常时间</span><br><span class="line">* 安装 versions，试用期为1个月零1天，到期后重复上面操作即可。</span><br></pre></td></tr></table></figure><p> 附录 ：<a href="http://pan.baidu.com/s/1kV7Tzjp" target="_blank" rel="noopener">百度云链接</a><br> PassWord : 9ggv</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;其实是一篇如何无限试用的教程，仅仅是为了测试和交流，如果有能力的同学请移步&lt;a href=&quot;https://www.versionsapp.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网&lt;/a&gt;购买正版&lt;/p&gt;
+&lt;p&gt; 本猫的mac升级到了 m
+      
+    
+    </summary>
+    
+    
+      <category term="svn" scheme="http://zxfei.cn/tags/svn/"/>
+    
+      <category term="工具集合" scheme="http://zxfei.cn/tags/%E5%B7%A5%E5%85%B7%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
   
   <entry>
     <title>终于有时间能够迁移博客了</title>
@@ -34,31 +60,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>如何优雅（无限）的使用（试用） versions</title>
-    <link href="http://zxfei.cn/2017/10/17/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%EF%BC%88%E6%97%A0%E9%99%90%EF%BC%89%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E8%AF%95%E7%94%A8%EF%BC%89-versions/"/>
-    <id>http://zxfei.cn/2017/10/17/如何优雅（无限）的使用（试用）-versions/</id>
-    <published>2017-10-17T08:48:27.000Z</published>
-    <updated>2017-12-29T10:43:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<div id="enc_content">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</div><script src="/js/crypto-js.js"></script><script>var pwd = window.prompt("please input password","");var txt = document.getElementById("enc_content").innerHTML;var bytes  = CryptoJS.AES.decrypt(txt, pwd);var plaintext = bytes.toString(CryptoJS.enc.Utf8);document.getElementById("enc_content").innerHTML = plaintext</script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;div id=&quot;enc_content&quot;&gt;U2FsdGVkX1/B2VxsVhs6XXYrr1SxpYOZQpqTSsHzHcMOqou4CB20Kf5G1BRxKjUXMTuSmmq42I8ZOliPuT9F2bQeBuFKnnu+GBqKGPaUyTFxeTBaOqoRlP
-      
-    
-    </summary>
-    
-    
-      <category term="svn" scheme="http://zxfei.cn/tags/svn/"/>
-    
-      <category term="工具集合" scheme="http://zxfei.cn/tags/%E5%B7%A5%E5%85%B7%E9%9B%86%E5%90%88/"/>
     
   </entry>
   
