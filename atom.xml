@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Damao的个人小站</title>
+  
+  <subtitle>不想当厨子的运营不是好前端</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://zxfei.cn/"/>
+  <updated>2017-12-29T11:01:57.000Z</updated>
+  <id>http://zxfei.cn/</id>
+  
+  <author>
+    <name>Damao Zhang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>123</title>
+    <link href="http://zxfei.cn/2017/12/29/123-1/"/>
+    <id>http://zxfei.cn/2017/12/29/123-1/</id>
+    <published>2017-12-29T11:01:57.000Z</published>
+    <updated>2017-12-29T11:01:57.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>123</title>
+    <link href="http://zxfei.cn/2017/12/29/123/"/>
+    <id>http://zxfei.cn/2017/12/29/123/</id>
+    <published>2017-12-29T11:01:30.000Z</published>
+    <updated>2017-12-29T11:01:30.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://zxfei.cn/2017/12/29/test-3/"/>
+    <id>http://zxfei.cn/2017/12/29/test-3/</id>
+    <published>2017-12-29T10:47:20.000Z</published>
+    <updated>2017-12-29T10:47:20.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://zxfei.cn/2017/12/29/test-2/"/>
+    <id>http://zxfei.cn/2017/12/29/test-2/</id>
+    <published>2017-12-29T10:46:59.000Z</published>
+    <updated>2017-12-29T10:46:59.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://zxfei.cn/2017/12/29/test-1/"/>
+    <id>http://zxfei.cn/2017/12/29/test-1/</id>
+    <published>2017-12-29T10:46:38.000Z</published>
+    <updated>2017-12-29T10:46:38.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://zxfei.cn/2017/12/29/test/"/>
+    <id>http://zxfei.cn/2017/12/29/test/</id>
+    <published>2017-12-29T10:45:28.000Z</published>
+    <updated>2017-12-29T10:45:28.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>text</title>
+    <link href="http://zxfei.cn/2017/12/29/text-4/"/>
+    <id>http://zxfei.cn/2017/12/29/text-4/</id>
+    <published>2017-12-29T06:39:37.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>text</title>
+    <link href="http://zxfei.cn/2017/12/29/text-3/"/>
+    <id>http://zxfei.cn/2017/12/29/text-3/</id>
+    <published>2017-12-29T06:38:59.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>text</title>
+    <link href="http://zxfei.cn/2017/12/29/text-2/"/>
+    <id>http://zxfei.cn/2017/12/29/text-2/</id>
+    <published>2017-12-29T06:38:28.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>text</title>
+    <link href="http://zxfei.cn/2017/12/29/text-1/"/>
+    <id>http://zxfei.cn/2017/12/29/text-1/</id>
+    <published>2017-12-29T06:38:06.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>text</title>
+    <link href="http://zxfei.cn/2017/12/29/text/"/>
+    <id>http://zxfei.cn/2017/12/29/text/</id>
+    <published>2017-12-29T04:49:52.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>daaa</title>
+    <link href="http://zxfei.cn/2017/12/29/daaa-1/"/>
+    <id>http://zxfei.cn/2017/12/29/daaa-1/</id>
+    <published>2017-12-29T03:43:59.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>daaa</title>
+    <link href="http://zxfei.cn/2017/12/29/daaa/"/>
+    <id>http://zxfei.cn/2017/12/29/daaa/</id>
+    <published>2017-12-29T03:38:25.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>终于有时间能够迁移博客了</title>
+    <link href="http://zxfei.cn/2017/10/19/%E7%BB%88%E4%BA%8E%E6%9C%89%E6%97%B6%E9%97%B4%E8%83%BD%E5%A4%9F%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2%E4%BA%86/"/>
+    <id>http://zxfei.cn/2017/10/19/终于有时间能够迁移博客了/</id>
+    <published>2017-10-19T03:15:48.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="我一直认为当猿星人最大的乐趣就是折腾"><a href="#我一直认为当猿星人最大的乐趣就是折腾" class="headerlink" title="我一直认为当猿星人最大的乐趣就是折腾"></a>我一直认为当猿星人最大的乐趣就是折腾</h3><p>从成为一名码农开始，已经过了三年多的时间。从一开始的手写笔记开始，到最后决定将博客迁移到github，中间折腾了很多次。从腾讯云到阿里云再到搬瓦工，从简书到印象笔记到知乎，从wordpress到jekyll到最后选择hexo，中间花费了大量的时间，现在终于可以说服我安安静静地码字，开开心心的记录自己的每一天。</p><h4 id="其实我一开始是喜欢-wordpress"><a href="#其实我一开始是喜欢-wordpress" class="headerlink" title="其实我一开始是喜欢 wordpress"></a>其实我一开始是喜欢 wordpress</h4><p>两位峰神 <a href="https://www.liaoxuefeng.com" target="_blank" rel="noopener">廖雪峰</a> , <a href="http://www.ruanyifeng.com/home.html" target="_blank" rel="noopener">阮一峰</a> 一直是我敬仰的，他们的博客影响了很多像我这样初步踏入编程世界的小白。他们把自己的经验和知识转换成一种通俗易懂的语言，让我在敲开大门的时候感受到了来自编程世界的善意。我也梦想着有一天自己的教程也能给想要踏进这个世界的猿人们些许的帮助。所以我一开始选择了腾讯云，通过wordpress来搭建了自己的第一个博客。选腾讯的原因很简单，学生一个月一块钱，一年才12，直到我毕业没有了使用资质。后来我又选了阿里云，因为我把当时某个朋友的网站挂到了阿里云上，在他的服务器上又安装了我的blog。。。。。。。<br>直到某天，乱炖挂了，蓝灯挂了，香蕉加速挂了，一切仿佛又回到了局域网。于是搬瓦工成了我的选择，ss加不用备案实在是太爽。后来公司开了香港专线，再用搬瓦工就属于浪费了，从此进入了jekyll时代。  </p><h4 id="混乱的-jekyll-时代"><a href="#混乱的-jekyll-时代" class="headerlink" title="混乱的 jekyll 时代"></a>混乱的 jekyll 时代</h4><p>原因可能很简单，当时自己没有mac，用公司的mac部署自己的blog环境实在是在监视之下，大家都知道win上部署r环境的繁琐之处，搞坏了女友的机子，自己的机子搞成了黑苹果，还是没有成功，可能我天赋有限吧，又不肯继续折腾，无奈放弃。</p><h4 id="终于选择了hexo。"><a href="#终于选择了hexo。" class="headerlink" title="终于选择了hexo。"></a>终于选择了hexo。</h4><p>只用node的环境不要太爽！！！，超简单配置，从此安安心心码字，这感觉6的起飞了。这个环境一直搭建了很长时间了，最近比较忙，刚给发布会扫尾完成，有时间慢慢的迁移自己的博客，望一切顺利。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;我一直认为当猿星人最大的乐趣就是折腾&quot;&gt;&lt;a href=&quot;#我一直认为当猿星人最大的乐趣就是折腾&quot; class=&quot;headerlink&quot; title=&quot;我一直认为当猿星人最大的乐趣就是折腾&quot;&gt;&lt;/a&gt;我一直认为当猿星人最大的乐趣就是折腾&lt;/h3&gt;&lt;p&gt;从成为一名码
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何优雅（无限）的使用（试用） versions</title>
+    <link href="http://zxfei.cn/2017/10/17/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%EF%BC%88%E6%97%A0%E9%99%90%EF%BC%89%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E8%AF%95%E7%94%A8%EF%BC%89-versions/"/>
+    <id>http://zxfei.cn/2017/10/17/如何优雅（无限）的使用（试用）-versions/</id>
+    <published>2017-10-17T08:48:27.000Z</published>
+    <updated>2017-12-29T10:43:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<div id="enc_content">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</div><script src="/js/crypto-js.js"></script><script>var pwd = window.prompt("please input password","");var txt = document.getElementById("enc_content").innerHTML;var bytes  = CryptoJS.AES.decrypt(txt, pwd);var plaintext = bytes.toString(CryptoJS.enc.Utf8);document.getElementById("enc_content").innerHTML = plaintext</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div id=&quot;enc_content&quot;&gt;U2FsdGVkX19kK25soXSu0t2Yi+rvusmIQgUoRnQTv4l54O0NcUebkR15jmV8Zh009nIG+iVpK95JRvDymt5dEUHPF0p5sV8sMgmwuNGJgp0cv/8CEr2Qyx
+      
+    
+    </summary>
+    
+    
+      <category term="svn" scheme="http://zxfei.cn/tags/svn/"/>
+    
+      <category term="工具集合" scheme="http://zxfei.cn/tags/%E5%B7%A5%E5%85%B7%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
+  
+</feed>
