@@ -96,16 +96,17 @@
 
 
 
-<meta name="description" content="来自 Apple 前端团队日常训练笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Damao的个人小站">
-<meta property="og:url" content="http://zxfei.cn/index.html">
+<meta name="description" content="什么是vue.jsvue.js 是尤雨溪开发的渐进式前端MVVM框架，提供了现代web开发中常见的高级功能，比如  解耦视图和数据 可复用的组件 前端路由 状态管理 虚拟DOM    vue.js简单小巧，压缩后的大小仅有17kb，在基础篇的学习中，我主要学习vue.js 2中的几个基础内容，包括：  双向数据绑定（页面中实时渲染数据） 计算属性 内置指令和自定义指令 组件  MVVM模式是由经典">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识vue（一）">
+<meta property="og:url" content="http://zxfei.cn/2018/01/16/初识vue（一）/index.html">
 <meta property="og:site_name" content="Damao的个人小站">
-<meta property="og:description" content="来自 Apple 前端团队日常训练笔记">
+<meta property="og:description" content="什么是vue.jsvue.js 是尤雨溪开发的渐进式前端MVVM框架，提供了现代web开发中常见的高级功能，比如  解耦视图和数据 可复用的组件 前端路由 状态管理 虚拟DOM    vue.js简单小巧，压缩后的大小仅有17kb，在基础篇的学习中，我主要学习vue.js 2中的几个基础内容，包括：  双向数据绑定（页面中实时渲染数据） 计算属性 内置指令和自定义指令 组件  MVVM模式是由经典">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-16T10:13:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Damao的个人小站">
-<meta name="twitter:description" content="来自 Apple 前端团队日常训练笔记">
+<meta name="twitter:title" content="初识vue（一）">
+<meta name="twitter:description" content="什么是vue.jsvue.js 是尤雨溪开发的渐进式前端MVVM框架，提供了现代web开发中常见的高级功能，比如  解耦视图和数据 可复用的组件 前端路由 状态管理 虚拟DOM    vue.js简单小巧，压缩后的大小仅有17kb，在基础篇的学习中，我主要学习vue.js 2中的几个基础内容，包括：  双向数据绑定（页面中实时渲染数据） 计算属性 内置指令和自定义指令 组件  MVVM模式是由经典">
 
 
 
@@ -134,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://zxfei.cn/"/>
+  <link rel="canonical" href="http://zxfei.cn/2018/01/16/初识vue（一）/"/>
 
 
 
 
 
-  <title>Damao的个人小站</title>
+  <title>初识vue（一） | Damao的个人小站</title>
   
 
 
@@ -165,9 +166,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -260,278 +259,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zxfei.cn/2018/01/16/初识vue（三）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Damao Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Damao的个人小站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/16/初识vue（三）/" itemprop="url">初识vue（三）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-16T18:12:17+08:00">
-                2018-01-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="利用v-model双向绑定数据"><a href="#利用v-model双向绑定数据" class="headerlink" title="利用v-model双向绑定数据"></a>利用v-model双向绑定数据</h1><p>v-model可以对input或者textarea进行双向数据绑定<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app2&quot;&gt;</span><br><span class="line">	&lt;input type=&quot;text&quot; placeholder=&quot;name&quot; v-model=&apos;name&apos;&gt;</span><br><span class="line">	&lt;p&gt;&#123;&#123;name&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;../scripts/vue.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	var name = new Vue(&#123;</span><br><span class="line">		el:&apos;#app2&apos;,</span><br><span class="line">		data:&#123;</span><br><span class="line">			name:&apos;&apos;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
-<p>input我比较熟悉，textarea在这里学习一下<br>textarea标签定义了多行的文本输入控件</p>
-<ul>
-<li>文本区容纳无限数量的文本，其中文本的默认字体是等宽字体</li>
-<li>通过cols和rows来规定textarea的尺寸，也可以用css的height和width来规定  </li>
-</ul>
-<h3 id="下面是它的几种属性"><a href="#下面是它的几种属性" class="headerlink" title="下面是它的几种属性:"></a>下面是它的几种属性:</h3><ul>
-<li><p>autofocus 刷新页面后自动获取焦点</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea autofoucs=&quot;autofoucs&quot;&gt;&lt;/textarea&gt; // xhtml中不允许简写</span><br><span class="line">&lt;textarea autofoucs&gt;&lt;/textarea&gt; // 新版本中允许简写</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>cols用于规定textarea的可见宽度</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea cols=&quot;30&quot;&gt;&lt;/textarea&gt; //如果通过css设置了宽高，这个属性就不起作用了</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>disabled用于禁用此文本区</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea disabled=&apos;disabled&apos;&gt;&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>form 规定文本区域所属的一个或者多个表单</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=&quot;/demo/demo_form.asp&quot; id=&quot;usrform&quot;&gt;</span><br><span class="line">  Name: &lt;input type=&quot;text&quot; name=&quot;usrname&quot;&gt;</span><br><span class="line">  &lt;input type=&quot;submit&quot;&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;br&gt;</span><br><span class="line">&lt;textarea rows=&quot;4&quot; cols=&quot;50&quot; name=&quot;comment&quot; form=&quot;usrform&quot;&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>maxlength 规定文本区域的最大字符数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea maxlength=&quot;50&quot;&gt;</span><br><span class="line"> Enter text here...</span><br><span class="line">&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>name属性为文本区域规定的名称，用于在js中对元素进行引用，或者在表单提交后，对表单数据进行引用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea cols=&quot;30&quot; rows=&quot;5&quot; name=&quot;W3School_text&quot;&gt;</span><br><span class="line">领先的 Web 技术教程 - 全部免费</span><br><span class="line">在w3school，你可以找到你所需要的所有的网站建设教程。</span><br><span class="line">从基础的HTML到XHTML，乃至进阶的XML、SQL、数据库、多媒体和WAP。</span><br><span class="line">&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>placeholder  老朋友了</p>
-</li>
-<li>readonly: 规定文本区域为只读，无法对内容进行修改，但用户可以通过 tab 键切换到该控件，选取或复制其中的内容。（未完）</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zxfei.cn/2018/01/16/初识vue（二）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Damao Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Damao的个人小站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/16/初识vue（二）/" itemprop="url">初识vue（二）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-16T18:12:11+08:00">
-                2018-01-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="利用v-for指令写列表"><a href="#利用v-for指令写列表" class="headerlink" title="利用v-for指令写列表"></a>利用v-for指令写列表</h1><p>列表需要进行数据的表示，在vue中需要利用双大括号（Mustache语法）来实时显示双向绑定的数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;book.name&#125;&#125;</span><br></pre></td></tr></table></figure></p>
-<p>v-for指令是循环指令，利用v-for可以写出最基本的li列表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">		&lt;ul&gt;</span><br><span class="line">			&lt;li v-for=&apos;book in books&apos;&gt;&#123;&#123;book.name&#125;&#125;&lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot; src=&quot;../scripts/vue.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		var list = new Vue(&#123;</span><br><span class="line">			el:&apos;#app&apos;,</span><br><span class="line">			data:&#123;</span><br><span class="line">				books:[</span><br><span class="line">					&#123;name:1&#125;,</span><br><span class="line">					&#123;name:2&#125;,</span><br><span class="line">					&#123;name:3&#125;</span><br><span class="line">				]</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;)</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -561,9 +291,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/16/初识vue（一）/" itemprop="url">初识vue（一）</a></h1>
+          <h1 class="post-title" itemprop="name headline">初识vue（一）</h1>
         
 
         <div class="post-meta">
@@ -613,9 +341,7 @@
       
 
       
-        
-          
-            <h1 id="什么是vue-js"><a href="#什么是vue-js" class="headerlink" title="什么是vue.js"></a>什么是vue.js</h1><p>vue.js 是尤雨溪开发的渐进式前端MVVM框架，提供了现代web开发中常见的高级功能，比如</p>
+        <h1 id="什么是vue-js"><a href="#什么是vue-js" class="headerlink" title="什么是vue.js"></a>什么是vue.js</h1><p>vue.js 是尤雨溪开发的渐进式前端MVVM框架，提供了现代web开发中常见的高级功能，比如</p>
 <ul>
 <li>解耦视图和数据</li>
 <li>可复用的组件</li>
@@ -650,8 +376,6 @@
 </ul>
 <p>分析指令，v-if中需要true或者false作为参数，这是一种数据类型，需要一个参数showBtn，将它的值存储在data数据中，实现数据和视图的分离。click事件也需要绑定一个具体的行为，点击后会发生什么属于方法的一种，因此click需要绑定一个fuction，这个function需要放在methods中。所以现在的代码基本已经搭建完毕。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;button id=&apos;app&apos; v-if=showBtn v-on:click=&apos;hindleClick&apos;&gt;click me&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script src=&apos;../scripts/vue.js&apos;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var click = new Vue(&#123;</span><br><span class="line">        el:&apos;#app&apos;,</span><br><span class="line">        data:&#123;</span><br><span class="line">            showBtn:true</span><br><span class="line">        &#125;,</span><br><span class="line">        methods:&#123;</span><br><span class="line">            hindleClick:function()&#123;</span><br><span class="line">                alert(&apos;good click&apos;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
     
@@ -668,137 +392,32 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zxfei.cn/2017/12/29/如何优雅（无限）的使用（试用）-versions/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Damao Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Damao的个人小站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/29/如何优雅（无限）的使用（试用）-versions/" itemprop="url">如何优雅（无限）的使用（试用） versions</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-29T18:43:06+08:00">
-                2017-12-29
-              </time>
+              <a href="/2017/12/29/如何优雅（无限）的使用（试用）-versions/" rel="next" title="如何优雅（无限）的使用（试用） versions">
+                <i class="fa fa-chevron-left"></i> 如何优雅（无限）的使用（试用） versions
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2018/01/16/初识vue（二）/" rel="prev" title="初识vue（二）">
+                初识vue（二） <i class="fa fa-chevron-right"></i>
+              </a>
             
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>其实是一篇如何无限试用的教程，仅仅是为了测试和交流，如果有能力的同学请移步<a href="https://www.versionsapp.com" target="_blank" rel="noopener">官网</a>购买正版</p>
-<p> 本猫的mac升级到了 macos 10.12.6 之后，网上流传的所谓的versions破解版本就不可用了，总会出现闪崩退出的情况。经历了command line + bbeidt 的黑暗时代和 cornerstone 的混乱时代，本猫决定自己尝试破解 versions ， 来一解相思之苦。。。  </p>
-<p> 第一次胡乱尝试的结果就是我的小mac成功的重装了系统，真心想念我们亲爱的水果出的时间胶囊。。。</p>
-<p> 废话少说，放出教程。 接招吧，versions君：   </p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">* 运行chean app软件，清楚残留的versions文件。如果以前的. versions文件已经通过常规方式删除，需去官网下载安装versions，然后利用cleanapp清除；</span><br><span class="line">* 修改系统时间为versions未过期的时间. </span><br><span class="line">* 终端cd到user目录下，依次运行如下命令：</span><br><span class="line">ps：如需要输入密码为开机密码</span><br><span class="line">sudo rm ~/.CF89AA64</span><br><span class="line">sudo rm ~/Library/.FB64CF89</span><br><span class="line">sudo rm ~/Library/Preferences/com.blackpixel.versions.plist</span><br><span class="line">sudo open ~/Library/Preferences/.GlobalPreferences.plist        默认为xcode打开</span><br><span class="line">Delete the key: com.blackpixel.versions.ezsRequiredToken and save it.  </span><br><span class="line">* 重启机器，然后修改系统时间为自动，即正常时间</span><br><span class="line">* 安装 versions，试用期为1个月零1天，到期后重复上面操作即可。</span><br></pre></td></tr></table></figure>
-<p> 附录 ：<a href="http://pan.baidu.com/s/1kV7Tzjp" target="_blank" rel="noopener">百度云链接</a><br> PassWord : 9ggv</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -808,133 +427,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zxfei.cn/2017/10/19/终于有时间能够迁移博客了/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Damao Zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Damao的个人小站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/19/终于有时间能够迁移博客了/" itemprop="url">终于有时间能够迁移博客了</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-19T11:15:48+08:00">
-                2017-10-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="我一直认为当猿星人最大的乐趣就是折腾"><a href="#我一直认为当猿星人最大的乐趣就是折腾" class="headerlink" title="我一直认为当猿星人最大的乐趣就是折腾"></a>我一直认为当猿星人最大的乐趣就是折腾</h3><p>从成为一名码农开始，已经过了三年多的时间。从一开始的手写笔记开始，到最后决定将博客迁移到github，中间折腾了很多次。从腾讯云到阿里云再到搬瓦工，从简书到印象笔记到知乎，从wordpress到jekyll到最后选择hexo，中间花费了大量的时间，现在终于可以说服我安安静静地码字，开开心心的记录自己的每一天。</p>
-<h4 id="其实我一开始是喜欢-wordpress"><a href="#其实我一开始是喜欢-wordpress" class="headerlink" title="其实我一开始是喜欢 wordpress"></a>其实我一开始是喜欢 wordpress</h4><p>两位峰神 <a href="https://www.liaoxuefeng.com" target="_blank" rel="noopener">廖雪峰</a> , <a href="http://www.ruanyifeng.com/home.html" target="_blank" rel="noopener">阮一峰</a> 一直是我敬仰的，他们的博客影响了很多像我这样初步踏入编程世界的小白。他们把自己的经验和知识转换成一种通俗易懂的语言，让我在敲开大门的时候感受到了来自编程世界的善意。我也梦想着有一天自己的教程也能给想要踏进这个世界的猿人们些许的帮助。所以我一开始选择了腾讯云，通过wordpress来搭建了自己的第一个博客。选腾讯的原因很简单，学生一个月一块钱，一年才12，直到我毕业没有了使用资质。后来我又选了阿里云，因为我把当时某个朋友的网站挂到了阿里云上，在他的服务器上又安装了我的blog。。。。。。。<br>直到某天，乱炖挂了，蓝灯挂了，香蕉加速挂了，一切仿佛又回到了局域网。于是搬瓦工成了我的选择，ss加不用备案实在是太爽。后来公司开了香港专线，再用搬瓦工就属于浪费了，从此进入了jekyll时代。  </p>
-<h4 id="混乱的-jekyll-时代"><a href="#混乱的-jekyll-时代" class="headerlink" title="混乱的 jekyll 时代"></a>混乱的 jekyll 时代</h4><p>原因可能很简单，当时自己没有mac，用公司的mac部署自己的blog环境实在是在监视之下，大家都知道win上部署r环境的繁琐之处，搞坏了女友的机子，自己的机子搞成了黑苹果，还是没有成功，可能我天赋有限吧，又不肯继续折腾，无奈放弃。</p>
-<h4 id="终于选择了hexo。"><a href="#终于选择了hexo。" class="headerlink" title="终于选择了hexo。"></a>终于选择了hexo。</h4><p>只用node的环境不要太爽！！！，超简单配置，从此安安心心码字，这感觉6的起飞了。这个环境一直搭建了很长时间了，最近比较忙，刚给发布会扫尾完成，有时间慢慢的迁移自己的博客，望一切顺利。</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -942,6 +439,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+       
+         <div id="gitment-container"></div>
+       
+      
+    </div>
+  
 
         </div>
         
@@ -962,8 +467,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -1050,6 +564,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是vue-js"><span class="nav-number">1.</span> <span class="nav-text">什么是vue.js</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vue-js和jquery等的不同"><span class="nav-number">2.</span> <span class="nav-text">vue.js和jquery等的不同</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我们用jq来绑定dom的点击事件"><span class="nav-number">2.0.1.</span> <span class="nav-text">我们用jq来绑定dom的点击事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我们用vue来进行dom事件的点击绑定"><span class="nav-number">2.0.2.</span> <span class="nav-text">我们用vue来进行dom事件的点击绑定</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何最基本的使用vue"><span class="nav-number">3.</span> <span class="nav-text">如何最基本的使用vue</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1170,10 +700,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
