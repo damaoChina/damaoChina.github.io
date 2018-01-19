@@ -3,6 +3,77 @@
   
     
     <entry>
+      <title><![CDATA[前端工程师技能之photoshop巧用系列第一篇——准备篇]]></title>
+      <url>/2018/01/19/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%8A%80%E8%83%BD%E4%B9%8Bphotoshop%E5%B7%A7%E7%94%A8%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AF%87%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E7%AF%87/</url>
+      <content type="html"><![CDATA[<h1 id="前面的话"><a href="#前面的话" class="headerlink" title="前面的话"></a>前面的话</h1><p>photoshop是前端工程师无法回避的一个软件，这个软件本身很强大，但我们仅仅需要通过这个工具来完成基本的切图工作即可。本文将开始photoshop巧用系列的第一篇——准备篇</p>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><p>我们为什么要去切图呢？这就需要说到项目流程。一个完整的项目流程是市场进行需求分析，产品做出项目原型，UI根据项目原型出设计图，前端根据设计图制作页面，后端进行数据相关工作，网站经过测试后上线。</p>
+<p>　　我们常说的切图实际上就是要把UI制作的设计图切成网页需要的素材。具体到网页的哪些地方需要素材呢？主要包括两类：</p>
+<ul>
+<li>HTML中的图片引用</li>
+<li>css中图片的引用<br>coding：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;xx.pp.jpg&quot;&gt;</span><br><span class="line">background-image:url(&apos;xx.xx.jpg&apos;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>针对前端的初始化设置主要包括三各方面</p>
+<h3 id="初始化单位"><a href="#初始化单位" class="headerlink" title="初始化单位"></a>初始化单位</h3><p>前端开发中一般使用像素作为单位，我们需要设置图的单位为像素单位。以下所设计的位置均以mac为例</p>
+<ul>
+<li>photoshop偏好设置 》 首选项 》 常规 》 单位与标尺 》 文字与标尺均设置为像素<br><img src="https://note.youdao.com/yws/public/resource/50fc20a9c5366c74d6ff7f2e84807a9f/xmlnote/WEBRESOURCEce48b29014b400323568b0c96a3f214e/456" alt="image"><h3 id="初始化面板设置"><a href="#初始化面板设置" class="headerlink" title="初始化面板设置"></a>初始化面板设置</h3>面板设置在窗口栏中，我们需要初始化选项，工具，历史记录，图层，信息等</li>
+<li>工具可以切换成两列显示</li>
+<li>信息（F8）和矩形选框配合使用，可以方便的查看图片的长宽高</li>
+<li>图层（F10）可以方便的查看图层</li>
+<li>历史记录可以进行回退</li>
+<li>选项与当前选中的功能一一对应</li>
+</ul>
+<p><img src="https://note.youdao.com/yws/public/resource/50fc20a9c5366c74d6ff7f2e84807a9f/xmlnote/98B38D8B8C294F5AAD12F2D887677FE7/459" alt="image"></p>
+<h3 id="辅助视图设置"><a href="#辅助视图设置" class="headerlink" title="辅助视图设置"></a>辅助视图设置</h3><p>辅助视图在视图下拉菜单中，我们需要开起对其，标尺和参考线功能</p>
+<ul>
+<li>对齐（cmd+shift+;）开启后可以在移动图层到另外一个图层，或者参考线，或者边缘文档中可以自动吸附</li>
+<li>标尺（cmd+r）</li>
+<li>参考线（cmd+;），首先需要开启显示额外内容，然后在视图》显示》参考线勾选开启<br><img src="https://note.youdao.com/yws/public/resource/50fc20a9c5366c74d6ff7f2e84807a9f/xmlnote/60884497EDFB4C04A5130FD81068F20C/479" alt="image"></li>
+</ul>
+<h2 id="常用工具说明"><a href="#常用工具说明" class="headerlink" title="常用工具说明"></a>常用工具说明</h2><p>在工具栏中有一些常用工具，下面将进行一一分析</p>
+<ul>
+<li>移动工具（v），常用于选择图层和移动图片。在选区工具中的选项面板有图层和组两个选项，组一般是指一个可能包含多个图层的文件夹，而图层仅仅指的是图层本身。<strong>在选项面板上自动选择选项一定要勾选上。</strong></li>
+<li>矩形选框工具（m）常用语选择一块区域并且配合信息面板查看信息，矩形选框工具右下角又一个小三角，鼠标点击后不松开会弹出多个选项，包括矩形选框，椭圆选框，单行选框，单列选框4种。<strong>使用矩形选框工具的同时，按住shiift会生成正方形</strong> 但是必需是同时按住，如果提前按住，会引发下列效果<ul>
+<li>一般的使用矩形选框工具都是为了建立一个新的选区，但是实际上可以进行如下操作</li>
+<li>添加到选区：shiift</li>
+<li>从选区减去：alt</li>
+<li>与选区进行交叉：shift+alt </li>
+</ul>
+</li>
+<li>魔棒工具（w）用来进行不规则的抠图，它可以设置容差的值，用来确定颜色取样的范围，容差为0代表只选取当前的颜色值。</li>
+<li>裁剪和切片工具（c）但是裁切工具裁剪的是工作区，不管多少图层都能够裁剪下来。</li>
+<li>缩放工具（z），不过一般用快捷键<ul>
+<li>cmd ➕ 加号</li>
+<li>opt➕滚轮</li>
+<li>cmd + 1直接100%适配</li>
+</ul>
+</li>
+<li>取色器和吸管工具（取色）<ul>
+<li>填充前景色：opt+del</li>
+<li>填充背景色：ctrl+del</li>
+<li>切换前景色和背景色：x</li>
+<li>默认前景色和背景色：D</li>
+</ul>
+</li>
+<li>文字工具（t）</li>
+<li>抓手工具（specs）<br><img src="https://note.youdao.com/yws/public/resource/50fc20a9c5366c74d6ff7f2e84807a9f/xmlnote/04A0E474EC72432D99B09A0352401097/481" alt="image"></li>
+</ul>
+<h2 id="其余常用快捷键"><a href="#其余常用快捷键" class="headerlink" title="其余常用快捷键"></a>其余常用快捷键</h2><ul>
+<li>单步撤销或前进： cmd+z</li>
+<li>连续撤销：cmd+opt+z</li>
+<li>回退到某一步：点击历史记录面板上相应的步骤</li>
+<li>取消选择：cmd+d</li>
+<li>变形：cmd+t</li>
+<li>保存：cmd+shift+opt+s</li>
+<li>合并图层：cmd+e</li>
+<li>盖印所见图层：cmd+shift+opt+e</li>
+</ul>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[初识vue（三）]]></title>
       <url>/2018/01/16/%E5%88%9D%E8%AF%86vue%EF%BC%88%E4%B8%89%EF%BC%89/</url>
       <content type="html"><![CDATA[<h1 id="利用v-model双向绑定数据"><a href="#利用v-model双向绑定数据" class="headerlink" title="利用v-model双向绑定数据"></a>利用v-model双向绑定数据</h1><p>v-model可以对input或者textarea进行双向数据绑定<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app2&quot;&gt;</span><br><span class="line">	&lt;input type=&quot;text&quot; placeholder=&quot;name&quot; v-model=&apos;name&apos;&gt;</span><br><span class="line">	&lt;p&gt;&#123;&#123;name&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;../scripts/vue.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	var name = new Vue(&#123;</span><br><span class="line">		el:&apos;#app2&apos;,</span><br><span class="line">		data:&#123;</span><br><span class="line">			name:&apos;&apos;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
